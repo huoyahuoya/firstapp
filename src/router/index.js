@@ -7,6 +7,8 @@ import FirstPage from '@/components/FirstPage'
 import SecondPage from '@/components/SecondPage'
 import FirstPart from '@/components/HomeComponents/FirstPart'
 import SecondPart from '@/components/HomeComponents/SecondPart'
+import Login from '@/components/RegisterComponents/Login'
+
 
 Vue.use(Router)
 
@@ -48,6 +50,13 @@ export default new Router({
       path: '/SecondPage',
       name: 'SecondPage',
       component: SecondPage
+    },
+  //  下面的登录界面相关页面
+    {
+      path: '/Login',
+      name: 'Login',
+      component: Login
     }
+
   ]
 })
